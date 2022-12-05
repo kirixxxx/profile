@@ -1,0 +1,63 @@
+a{
+	color:red;
+	font-size: 20px; 
+}
+#v95{
+	color: DarkBlue;
+}
+.dan{
+	color: Black;
+	background-color:LightBlue;
+	border: 2px solid DarkBlue;
+
+
+}
+
+
+
+a:hover{
+	border: 5px solid red;
+}
+.hongo{
+	transform: scale(0.5);
+	transition: 5s all;
+	
+	height: 80px;
+	width: 80%;
+	padding: 5px;
+	margin: 3px;
+	font-size: 30px;
+	text-align: center;
+	font-weight: 900;
+	color: Black;
+	background-color:LightBlue;
+	border: 2px solid DarkBlue;
+	border-radius:25px
+}
+.hongo:hover{
+transform: rotate(45deg) scale(0.5);	
+}
+#con7:hover{
+	filter: hue-rotate(180deg);
+}
+#mon7:hover{
+	filter: blur(2px);
+}
+#son7:hover{
+	filter: drop-shadow(20px 15px 4px rgba(0,0,0,0.5))grayscale(0.7); 
+}
+ 
+ body {background-color:#2d2d2d;}
+
+#clock{
+	 font: small-caps lighter 30px/100% "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Times, sans-serif;
+  text-align:left;
+  width: 20%;
+  margin: 5px;
+  color:DarkBlue;
+  border-left: 3px solid DarkBlue;
+  padding: 10px;
+  float: left;
+  font-size: 18px;
+}
+ 

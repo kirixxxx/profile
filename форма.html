@@ -1,0 +1,89 @@
+<html>
+<head>
+
+<title> Akylbayeva Karakoz</title>
+</head>
+
+<body>
+<body background="баскетбол2.png" size="100">
+<H2 align="center"> Баскетбол ойынына заявка жіберу </H2>
+<form action="#"  methot="post" enctype="multipart/form-data">
+
+<p> Авторландыру </p>
+<input placeholder="Email" type="text" name="username">
+
+<input  placeholder="Пароль" type="password" name="userpass">
+<input  placeholder="Парольді растау" type="password" name="userpass">
+<div>
+<p> Жеке мәліметтер </p>
+<input  placeholder="Тегі" type="text" name="username">
+<input  placeholder="Аты" type="text" name="username">
+<input  placeholder="Әкесінің аты" type="text" name="username"><br>
+</div>
+<div>
+<input  placeholder="Туған жылы" type="text" name="username">
+<select name="ai">
+<option value="December"> Желтоқсан </option>
+<option value="January">Қантар </option>
+<option value="February"> Ақпан</option>
+<option value="June"> Маусым </option>
+<option value="July">Шілде </option>
+<option value="August"> Тамыз</option>
+<input  placeholder="Күні" type="text" name="username">
+</div>
+<p> Телефон номер</p>
+<input  type="text" name="username">
+<p>Пол</p> 
+<div>
+<input  type="radio" name="gender" value="male">Ұл
+</div>
+<div>
+<input  type="radio" name="gender" value="female">Қыз
+</div>
+
+
+<p align="left" >Алған жүлделеріңіз<br>
+<textarea name="text" cols="20" rows="5"></textarea>
+</div>
+<p> </p>
+<input  type="file" name="usefoto">
+</p>
+
+</p>
+<p> Сіздің баскетболдағы қызығушылығыңыз
+<p><input  type="checkbox" name="basket" value="yes"> Фанат
+<input  type="checkbox" name="basket1" value="yes"> Әуесқой</p>
+<p><input  type="checkbox" name="basket2" value="yes"> 5х5
+<input  type="checkbox" name="basket3" value="yes"> 3х3</p>
+<p><input  type="checkbox" name="basket4" value="yes"> Төреші
+<input  type="checkbox" name="basket5" value="yes"> Жаттықтырушы</p>
+</p>
+<div>
+<p> </p>
+<p onclick="alert('Заявка cәтті жібірілді!');"><button type="submit">Жіберу</button></p>
+<p onclick="alert('Форманы жойдыңыз!')"><button type="reset">Жою</button>
+</div>
+</form>
+
+
+function addLeadingZero(d){
+	return (d<10)? '0'+ d: d;
+} 
+const days = [ 'Жексенбі', 'Дүйсенбі', 'Сәрсенбі',
+ 'Сейсенбі', 'Бейсенбі', 'Жұма', 'Сенбі'];
+ function getUserTime(t= new Date()){
+	 let Y= t.getFullYear();
+	 	 let M= addLeadingZero(t.getMonth()+1);
+		 let d = days[t.getDay()];
+		 	 let D= addLeadingZero(t.getDate());
+			  let h= addLeadingZero(t.getHours());
+			   let m= addLeadingZero(t.getMinutes());
+	
+	 console.log(Y, M, D, d, h, m, );
+	 return `${Y}.${M}.${D} ${h}:${m} (${d})`
+ }
+ console.log(getUserTime());
+
+</body>
+
+</html>
